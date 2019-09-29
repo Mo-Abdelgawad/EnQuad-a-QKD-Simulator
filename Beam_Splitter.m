@@ -1,9 +1,5 @@
 function [ photons_states_after_beam_splitter ] =Beam_Splitter(photons_states_after_channel,Alice_basis_selection)
 
-%photons_states_after_channel  is photons states after channel 
-%c  is Alice_random_basis_selection
-%photons_states_after_beam_splitter  is the photon state after beam splitter. Beam Splitters act as  random selector for measuring bases.
-
  photons_states_after_beam_splitter=photons_states_after_channel;
  [~,rect]=find(Alice_basis_selection==0); %rectlinear bases positions
  [~,circ]=find(Alice_basis_selection==1); %circ bases positions
